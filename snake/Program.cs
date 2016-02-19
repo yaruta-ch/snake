@@ -24,8 +24,8 @@ namespace snake
 
             //отрисовка точек
            
-            point p1 = new point(5,14,'#');
-            p1.Draw();
+            point p = new point(5,5,'*');
+            Snake snake = new Snake(p, 4, Direction.Right); 
 
 
 
