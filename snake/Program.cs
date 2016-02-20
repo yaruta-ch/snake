@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace snake
@@ -25,8 +26,12 @@ namespace snake
             //отрисовка точек
            
             point p = new point(5,5,'*');
-            Snake snake = new Snake(p, 15, Direction.Down);
+            Snake snake = new Snake(p, 5, Direction.Right);
             snake.Drow();
+            for (int a=0; a< 25; a++) { 
+            snake.Move();
+            Thread.Sleep(300);
+            }
 
 
 
